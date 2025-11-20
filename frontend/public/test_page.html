@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Teste - Problemas de UI</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        
+        /* PROBLEMA 1: Botão muito pequeno */
+        .small-button {
+            width: 20px;
+            height: 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        
+        /* PROBLEMA 2: Texto com contraste baixo */
+        .low-contrast {
+            color: #cccccc;
+            background: #ffffff;
+        }
+        
+        /* PROBLEMA 3: Elemento com dimensões zero */
+        .zero-dimensions {
+            width: 0;
+            height: 0;
+            background: #ff0000;
+        }
+        
+        /* PROBLEMA 4: Overflow */
+        .overflow-issue {
+            width: 100px;
+            height: 50px;
+            background: #00ff00;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        
+        .problem-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 2px dashed #ccc;
+            border-radius: 4px;
+        }
+        
+        .problem-section h3 {
+            margin-top: 0;
+            color: #d32f2f;
+        }
+        
+        .status {
+            margin-top: 20px;
+            padding: 10px;
+            background: #e3f2fd;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🧪 Página de Teste - Problemas de UI</h1>
+        <p>Esta página contém problemas conhecidos que devem ser corrigidos automaticamente pelo ForgeExperienceDesign.</p>
+        
+        <div class="problem-section">
+            <h3>❌ Problema 1: Botão Muito Pequeno</h3>
+            <p>Botão com apenas 20x20px (mínimo recomendado: 44x44px)</p>
+            <button class="small-button" id="small-btn">OK</button>
+            <div class="status" id="status-1">⏳ Aguardando correção...</div>
+        </div>
+        
+        <div class="problem-section">
+            <h3>❌ Problema 2: Contraste Baixo</h3>
+            <p>Texto cinza claro (#cccccc) sobre fundo branco</p>
+            <p class="low-contrast" id="low-contrast-text">
+                Este texto tem contraste muito baixo e é difícil de ler.
+            </p>
+            <div class="status" id="status-2">⏳ Aguardando correção...</div>
+        </div>
+        
+        <div class="problem-section">
+            <h3>❌ Problema 3: Dimensões Zero</h3>
+            <p>Elemento com width e height = 0</p>
+            <div class="zero-dimensions" id="zero-elem"></div>
+            <div class="status" id="status-3">⏳ Aguardando correção...</div>
+        </div>
+        
+        <div class="problem-section">
+            <h3>❌ Problema 4: Overflow</h3>
+            <p>Elemento que pode causar overflow</p>
+            <div class="overflow-issue" id="overflow-elem">
+                Este texto é muito longo e vai causar overflow horizontal porque o container é pequeno demais.
+            </div>
+            <div class="status" id="status-4">⏳ Aguardando correção...</div>
+        </div>
+        
+        <div class="status" id="overall-status">
+            <h3>Status Geral</h3>
+            <p id="fixes-applied">Correções aplicadas: 0</p>
+            <p id="fixes-available">Correções disponíveis: Verificando...</p>
+        </div>
+    </div>
+    
+    <!-- FixInjector Script -->
+    <script src="http://localhost:3001/static/fix-injector.js"></script>
+    <script>
+        // Configurar FixInjector
+        window.FORGE_EXPERIENCE_DESIGN_CONFIG = {
+            apiUrl: 'http://localhost:8003',
+            applicationId: 'test-page',
+            autoApply: true,
+            pollInterval: 5000 // 5 segundos
+        };
+        
+        // Aguardar correções serem aplicadas
+        setTimeout(() => {
+            checkFixes();
+        }, 10000); // Aguardar 10 segundos
+        
+        function checkFixes() {
+            // Verificar se correções foram aplicadas
+            const smallBtn = document.getElementById('small-btn');
+            const computedStyle = window.getComputedStyle(smallBtn);
+            
+            // Verificar botão pequeno
+            const btnWidth = parseInt(computedStyle.minWidth) || parseInt(computedStyle.width);
+            const btnHeight = parseInt(computedStyle.minHeight) || parseInt(computedStyle.height);
+            
+            if (btnWidth >= 44 && btnHeight >= 44) {
+                document.getElementById('status-1').innerHTML = '✅ CORRIGIDO! Botão agora tem ' + btnWidth + 'x' + btnHeight + 'px';
+                document.getElementById('status-1').style.background = '#c8e6c9';
+            }
+            
+            // Verificar contraste
+            const contrastText = document.getElementById('low-contrast-text');
+            const contrastStyle = window.getComputedStyle(contrastText);
+            if (contrastStyle.color !== 'rgb(204, 204, 204)') {
+                document.getElementById('status-2').innerHTML = '✅ CORRIGIDO! Cor alterada para: ' + contrastStyle.color;
+                document.getElementById('status-2').style.background = '#c8e6c9';
+            }
+            
+            // Verificar dimensões zero
+            const zeroElem = document.getElementById('zero-elem');
+            const zeroStyle = window.getComputedStyle(zeroElem);
+            const zeroWidth = parseInt(zeroStyle.minWidth) || parseInt(zeroStyle.width);
+            const zeroHeight = parseInt(zeroStyle.minHeight) || parseInt(zeroStyle.height);
+            
+            if (zeroWidth > 0 || zeroHeight > 0) {
+                document.getElementById('status-3').innerHTML = '✅ CORRIGIDO! Dimensões agora: ' + zeroWidth + 'x' + zeroHeight;
+                document.getElementById('status-3').style.background = '#c8e6c9';
+            }
+            
+            // Verificar overflow
+            const overflowElem = document.getElementById('overflow-elem');
+            const overflowStyle = window.getComputedStyle(overflowElem);
+            if (overflowStyle.overflow === 'hidden') {
+                document.getElementById('status-4').innerHTML = '✅ CORRIGIDO! Overflow controlado';
+                document.getElementById('status-4').style.background = '#c8e6c9';
+            }
+            
+            // Contar correções aplicadas
+            const appliedCount = document.querySelectorAll('.status').length - 
+                                 document.querySelectorAll('.status:not([style*="background: rgb(200, 230, 201)"])').length;
+            document.getElementById('fixes-applied').textContent = 'Correções aplicadas: ' + appliedCount;
+            
+            // Verificar correções disponíveis
+            if (window.forgeExperienceDesign && window.forgeExperienceDesign.injector) {
+                const fixes = window.forgeExperienceDesign.injector.getAppliedFixes();
+                document.getElementById('fixes-available').textContent = 'Correções disponíveis: ' + fixes.length;
+            }
+        }
+        
+        // Verificar a cada 2 segundos
+        setInterval(checkFixes, 2000);
+    </script>
+</body>
+</html>
+

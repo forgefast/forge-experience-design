@@ -1,0 +1,1527 @@
+
+> forge-experience-design-frontend@0.1.0 dev
+> vite
+
+
+  VITE v5.4.21  ready in 202 ms
+
+  ➜  Local:   http://localhost:3001/
+  ➜  Network: use --host to expose
+Error:   Failed to scan for dependencies from entries:
+  /home/gabriel/softhill/forge-experience-design/frontend/index.html
+
+  [31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mUnexpected "export"[0m
+
+    src/core/fix-applier.ts:20:7:
+[37m      20 │ export [32mexport[37m class FixApplier {
+         ╵        [32m~~~~~~[0m
+
+
+    at failureErrorWithLog (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:1472:15)
+    at /home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:945:25
+    at runOnEndCallbacks (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:1315:45)
+    at buildResponseToResult (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:943:7)
+    at /home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:955:9
+    at new Promise (<anonymous>)
+    at requestCallbacks.on-end (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:954:54)
+    at handleRequest (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:647:17)
+    at handleIncomingPacket (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:672:7)
+    at Socket.readFromStdout (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:600:7)
+01:55:30 [vite] Pre-transform error: Transform failed with 1 error:
+/home/gabriel/softhill/forge-experience-design/frontend/src/core/fix-applier.ts:20:7: ERROR: Unexpected "export"
+01:55:30 [vite] Pre-transform error: Transform failed with 1 error:
+/home/gabriel/softhill/forge-experience-design/frontend/src/core/fix-applier.ts:20:7: ERROR: Unexpected "export"
+01:55:42 [vite] Internal server error: Transform failed with 1 error:
+/home/gabriel/softhill/forge-experience-design/frontend/src/core/fix-applier.ts:20:7: ERROR: Unexpected "export"
+  Plugin: vite:esbuild
+  File: /home/gabriel/softhill/forge-experience-design/frontend/src/core/fix-applier.ts:20:7
+  
+  Unexpected "export"
+  18 |  }
+  19 |  
+  20 |  export export class FixApplier {
+     |         ^
+  21 |    private appliedFixes: Map<string, Fix> = new Map();
+  22 |    private styleElement: HTMLStyleElement | null = null;
+  
+      at failureErrorWithLog (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/gabriel/softhill/forge-experience-design/frontend/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:517:28)
+      at addChunk (node:internal/streams/readable:368:12)
+      at readableAddChunk (node:internal/streams/readable:341:9)
+      at Readable.push (node:internal/streams/readable:278:10)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:190:23)
+01:55:48 [vite] hmr update /src/index.css, /src/components/FixesList.tsx, /src/components/Dashboard.tsx
+01:55:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:52 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:52 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:52 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:52 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:57 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:57 [vite] http proxy error: /api/fixes/rules
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:55:57 [vite] http proxy error: /api/fixes/rules
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:01 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:01 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:02 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:06 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:07 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:11 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:12 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:16 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:17 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:21 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:22 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:26 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:27 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:31 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:32 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:36 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:37 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:41 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:42 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:46 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:47 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:51 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:52 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:56 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:56:57 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:57:01 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:57:02 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED ::1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+01:57:03 [vite] vite.config.ts changed, restarting server...
+01:57:03 [vite] server restarted.
+01:57:33 [vite] hmr update /src/index.css, /src/components/Dashboard.tsx, /src/components/FixesList.tsx
+01:57:33 [vite] vite.config.ts changed, restarting server...
+01:57:33 [vite] server restarted.
+02:04:34 [vite] page reload public/test_page.html
+02:05:45 [vite] page reload public/test_page.html
+02:06:37 [vite] vite.config.ts changed, restarting server...
+02:06:37 [vite] server restarted.
+02:07:45 [vite] vite.config.ts changed, restarting server...
+02:07:45 [vite] server restarted.
+02:19:09 [vite] hmr update /src/components/FixesList.tsx, /src/index.css
+02:19:12 [vite] hmr update /src/components/FixesList.tsx, /src/index.css
+02:19:34 [vite] hmr update /src/index.css, /src/App.tsx, /src/components/Dashboard.tsx, /src/components/FixesList.tsx, /src/components/RulesManager.tsx
+02:19:39 [vite] hmr update /src/components/FixesList.tsx, /src/index.css
+02:19:42 [vite] hmr update /src/components/FixesList.tsx, /src/index.css
+02:20:29 [vite] hmr update /src/components/FixPreview.tsx, /src/index.css
+02:20:29 [vite] page reload src/components/FixHistory.tsx
+02:20:29 [vite] hmr update /src/components/FixesList.tsx, /src/index.css
+02:20:29 [vite] hmr update /src/components/ApplyFixDialog.tsx, /src/index.css
+02:20:29 [vite] hmr update /src/index.css, /src/App.tsx, /src/components/Dashboard.tsx, /src/components/FixesList.tsx, /src/components/RulesManager.tsx, /src/components/ApplyFixDialog.tsx, /src/components/FixPreview.tsx
+02:29:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:29:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:29:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:30:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:31:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:32:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:33:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:34:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:35:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:36:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:37:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:38:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:39:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:40:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:41:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:42:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:43:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:44:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:45:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:46:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:47:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:48:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:49:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:50:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:51:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:52:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:53:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:54:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:55:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:56:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:57:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:58:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+02:59:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:00:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:01:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:02:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:03:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:04:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:19 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:05:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:06:04 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:06:09 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:06:14 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:24 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:29 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:34 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:39 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:44 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:49 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:54 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
+03:07:59 [vite] http proxy error: /api/fixes/generate?limit=100
+Error: connect ECONNREFUSED 127.0.0.1:8003
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1549:16)
